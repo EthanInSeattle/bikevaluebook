@@ -4,7 +4,8 @@
   "description": "bike value book",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "client-start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "server-start": "node ./src/server/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,6 +31,7 @@
   "dependencies": {
     "@material-ui/core": "^4.1.2",
     "aphrodite": "^2.3.1",
+    "express": "^4.17.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
